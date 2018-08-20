@@ -87,7 +87,7 @@ switchDesktopByNumber(targetDesktop)
         return
     }
 
-    if (Abs(CurrentDesktop - targetDesktop) < 2) {
+    if (Abs(CurrentDesktop - targetDesktop) < 10) {
         ; Go right until we reach the desktop we want
         while (CurrentDesktop < targetDesktop) {
             Send ^#{Right}
